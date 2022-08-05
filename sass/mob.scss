@@ -1,0 +1,189 @@
+@media only screen and (max-width:426px)
+{
+
+.wrap{
+        width: 90%;
+    }
+
+/******************* Header **********************/
+.menu{
+        width: 100%;
+        position: absolute;
+        background-color: #000;
+        height: 300px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        top: 90px;
+        left: 0;
+
+    }
+.came{
+    display: flex;
+}
+#button{
+        display: block;
+        width: 35px;
+        height: 35px;
+        background-color: transparent;
+        border: none;  
+        outline: none;
+        appearance: none;
+        
+     span{
+            margin: 10px 0px;
+        }
+      
+        &::after , &::before , span{
+        width: 100%;
+        height: 4px; transition: 0.3s;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        border-radius: 20px;
+
+      }
+      
+      &::after , &::before{
+        content: '';
+      }
+    }
+   
+    .is-active{
+        &::before{
+            transform:translate(0px, 12px) rotate(-45deg);
+        }
+        span{
+            opacity: 0;
+        }
+        &::after{
+            transform:translate(0px, -15px) rotate(46deg);
+        }
+    }
+/******************* Header **********************/
+
+
+
+/******************* Banner **********************/
+.ban-con{
+    width: 100%;
+    height: 546px;
+    p{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+}
+.links{
+    margin-top: 0;
+    width: 100%;
+    a{
+        width: 131px;
+    }
+}
+h1 span{
+    letter-spacing: 0px;
+    font-size: 44px;
+}
+/******************* Banner **********************/
+
+/******************* About us **********************/
+.wel-con{
+    flex-direction: column;
+    margin: 0;
+    .wel-intro{
+        width: 100%;
+        height: 446px;
+        align-items: center;
+        h3 , p{
+            text-align: center;
+        }
+    }
+}
+
+
+.me-croped{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   height: 313px;
+   img{
+    width: 286px;
+   }
+}
+.skills{
+    width: 100%;
+}
+/******************* About us **********************/
+
+/******************* Services **********************/
+.services{
+    margin-top: 20px;
+}
+.serv-con{
+    grid-template-columns: 1fr;
+    .servs{
+        text-align: center;
+        align-items: center;
+    }
+}
+/******************* Services **********************/
+.experience{
+    .ex-con{
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+     }
+}
+.exps{
+    width: 271px;
+}
+/******************* Services **********************/
+
+/*******************    Blog **********************/
+.the-blogs{
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.bl-all{
+    width:280px;
+    a{
+        width: 100%;
+        align-items: center;
+    }
+
+}
+/*******************    Blog **********************/
+
+
+/******************* Projects **********************/
+.proj-con{
+    grid-template-columns: 1fr;
+}
+/******************* Projects **********************/
+
+/****************** CTA *******************/
+h4{
+    height: 181px;
+    text-align: center;
+}
+/****************** CTA *******************/
+
+
+
+
+
+/****************** Footer *******************/
+.socials{
+    width: 287px;
+    i{
+        font-size: 28px;
+        padding: 11px;
+    }
+}
+
+/****************** Footer *******************/
+
+
+}

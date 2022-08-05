@@ -1,0 +1,794 @@
+* {
+  margin: 0;
+  font-family: 'poppins';
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  background-color: #30c39e;
+  color: #fff;
+}
+
+::selection {
+  background-color: #30c39e;
+  color: #fff;
+}
+
+/****************** Header *******************/
+header {
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  z-index: 100;
+}
+
+#button {
+  display: none;
+}
+
+header, nav {
+  height: 90px;
+}
+
+.wrap {
+  width: 1170px;
+  margin: 0px auto;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  color: #fff;
+  width: 30%;
+  font-weight: 500;
+  text-shadow: -2px 3px 4px #000;
+  font-size: 35px;
+}
+
+.logo span {
+  color: #30c39e;
+}
+
+.menu {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  border-radius: 20px;
+  background-color: #30c39e;
+  width: 0%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/****************** Header *******************/
+/****************** Banner *******************/
+.banner {
+  background-image: url(../img/Guy.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.banner .vig {
+  background-color: #0000009f;
+  width: 100%;
+}
+
+.banner, .vig {
+  height: 100vh;
+}
+
+.ban-con {
+  width: 100%;
+  height: 571px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ban-con p {
+  width: 627px;
+  margin: 20px 0px;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.648);
+}
+
+h1 {
+  font-size: 18px;
+  color: #fff;
+  z-index: 10;
+  font-weight: 200;
+  letter-spacing: 6px;
+}
+
+h1 span {
+  letter-spacing: 7px;
+  font-size: 65px;
+  font-weight: 600;
+  text-shadow: -2px 3px 4px #000;
+  color: #30c39e;
+}
+
+.links {
+  width: 327px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 20px;
+  margin-top: 10px;
+  background-color: #30c39e00;
+}
+
+.links a {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.links a:hover {
+  background-color: #30c39e;
+  border-color: #30c39e;
+}
+
+/****************** Banner *******************/
+/****************** Welcome *******************/
+.welcome {
+  width: 100%;
+  min-height: 700px;
+  margin-top: 20px;
+}
+
+h2 {
+  width: 100%;
+  height: 124px;
+  font-weight: 200;
+  letter-spacing: 6px;
+  color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h2 hr {
+  width: 170px;
+  height: 2.5px;
+  border: none;
+  background-color: #222222;
+}
+
+.wel-con {
+  width: 100%;
+  min-height: 434px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wel-con .wel-intro {
+  width: 365px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wel-intro h3 {
+  color: #222222;
+  width: 100%;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.wel-intro p {
+  color: rgba(0, 0, 0, 0.714);
+  line-height: 34px;
+}
+
+.wel-intro a {
+  text-decoration: none;
+  color: #fff;
+  width: 194px;
+  background-color: #2596be;
+  margin-top: 20px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.me-croped {
+  width: 400px;
+  height: 400px;
+}
+
+.me-croped img {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px #000;
+          box-shadow: 0px 0px 5px #000;
+}
+
+.skills {
+  width: 355px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills h3 {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills p {
+  width: 100%;
+  text-align: justify;
+  line-height: 30px;
+  color: #000000a8;
+}
+
+/****************** Welcome *******************/
+/****************** Services *******************/
+.services {
+  width: 100%;
+  min-height: 500px;
+  background-color: #30c39e;
+}
+
+.services h2 {
+  color: #fff;
+}
+
+.services h2 hr {
+  background-color: #fff;
+}
+
+.serv-con {
+  width: 100%;
+  min-height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.serv-con .servs {
+  height: 190px;
+  width: 290px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+}
+
+.servs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.servs h3 {
+  font-size: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 20px;
+}
+
+.servs h3 i {
+  font-size: 48px;
+  margin-right: 15px;
+}
+
+.servs p {
+  line-height: 30px;
+}
+
+/****************** Services *******************/
+/****************** Experience *******************/
+.experience {
+  width: 100%;
+  min-height: 500px;
+}
+
+.experience .ex-con {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  min-height: 300px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.exps {
+  width: 360px;
+  height: 607px;
+  background-color: #e8e8e8fc;
+}
+
+.exps img {
+  width: 100%;
+}
+
+.exps h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 23px;
+  margin-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.exps h3 span {
+  background-color: #24e6a6;
+  padding: 0px 10px;
+  color: #fff;
+}
+
+.exps p {
+  color: rgba(0, 0, 0, 0.523);
+  padding: 0px 10px;
+  line-height: 35px;
+  margin-top: 20px;
+}
+
+/****************** Experience *******************/
+/****************** Blog *******************/
+.blog-h {
+  color: #fff;
+}
+
+.blog-h hr {
+  background-color: #fff;
+}
+
+.blog {
+  width: 100%;
+  margin-top: 20px;
+  min-height: 600px;
+  background-image: url(../img/blogbg.jpg);
+  background-size: cover;
+}
+
+.blog .b-vig {
+  width: 100%;
+  background-color: #000000a9;
+}
+
+.blog, .b-vig {
+  min-height: 600px;
+}
+
+.bl-con {
+  width: 100%;
+}
+
+.bl-con span {
+  font-size: 34px;
+  color: #fff;
+  text-shadow: 0px 0px 5px #000;
+  font-weight: 600;
+  letter-spacing: 12px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.bl-con p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.the-blogs {
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  display: -ms-grid;
+  display: grid;
+  min-height: 300px;
+}
+
+.bl-all {
+  width: 360px;
+  margin-top: 20px;
+  background-color: #e8e8e8fc;
+}
+
+.bl-all h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 23px;
+  margin-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.bl-all h3 span {
+  background-color: #24e6a6;
+  padding: 0px 10px;
+  color: #fff;
+}
+
+.bl-all p {
+  color: rgba(0, 0, 0, 0.523);
+  padding: 0px 10px;
+  line-height: 35px;
+  margin-top: 20px;
+}
+
+.bl-all a {
+  width: 326px;
+  font-size: 19px;
+  height: 60px;
+  font-weight: 600;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-decoration: none;
+  color: #30c39e;
+}
+
+/****************** Blog *******************/
+/****************** Projects *******************/
+.projects {
+  min-height: 500px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.proj-con {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-row-gap: 20px;
+}
+
+.proj-con img {
+  width: 278px;
+}
+
+/****************** Projects *******************/
+/****************** CTA *******************/
+.cta {
+  width: 100%;
+  min-height: 400px;
+  margin-top: 30px;
+  background-color: #2596be;
+}
+
+h4 {
+  width: 100%;
+  height: 124px;
+  font-weight: 200;
+  letter-spacing: 6px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cta-con {
+  width: 100%;
+  min-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta-con p {
+  text-align: center;
+}
+
+.cta-con span {
+  width: 314px;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.cta-con span a {
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(0, 0, 0, 0.69);
+  background-color: #fff;
+}
+
+/****************** CTA *******************/
+/****************** Contact me *******************/
+.Contact-me {
+  width: 100%;
+  min-height: 721px;
+}
+
+.contact-con {
+  width: 100%;
+  min-height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.8fr 2fr;
+      grid-template-columns: 1.8fr 2fr;
+  justify-items: center;
+}
+
+.location, form {
+  width: 96%;
+  height: 600px;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.location p {
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.627);
+}
+
+.location p span {
+  margin-left: 20px;
+}
+
+.location i {
+  margin-right: 10px;
+  color: #30c39e;
+}
+
+.location iframe {
+  width: 100%;
+  height: 336px;
+  margin-bottom: 54px;
+}
+
+form {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 450px;
+      grid-template-columns: 1fr 450px;
+}
+
+form label {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+form label i {
+  color: #30c39e;
+}
+
+form input {
+  height: 54px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+}
+
+form #message {
+  height: 70px;
+}
+
+form #submit {
+  width: 130px;
+  border-radius: 5px;
+  background-color: #2596be;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  height: 40px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+/****************** Contact me *******************/
+/************************ Footer *************************/
+footer {
+  width: 100%;
+  height: 262px;
+  background-color: #03010c;
+  margin-top: 40px;
+}
+
+.socials {
+  width: 550px;
+  margin: 0px auto;
+  height: 116px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socials i {
+  color: #fff;
+  font-size: 44px;
+  padding: 13px;
+  background-color: #160a21;
+}
+
+.the-end {
+  color: rgba(255, 255, 255, 0.567);
+  width: 100%;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+/************************ Footer *************************/
+/*# sourceMappingURL=style.css.map */

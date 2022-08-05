@@ -1,0 +1,207 @@
+@media only screen and (min-width: 426px) and (max-width: 769px) {
+  .wrap {
+    width: 90%;
+  }
+  .menu {
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    height: 300px;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 90px;
+    left: 0;
+  }
+  .came {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #button {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  #button span {
+    margin: 10px 0px;
+  }
+  #button::after, #button::before, #button span {
+    width: 100%;
+    height: 4px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: white;
+    display: block;
+    border-radius: 20px;
+  }
+  #button::after, #button::before {
+    content: '';
+  }
+  .is-active::before {
+    -webkit-transform: translate(0px, 12px) rotate(-45deg);
+            transform: translate(0px, 12px) rotate(-45deg);
+  }
+  .is-active span {
+    opacity: 0;
+  }
+  .is-active::after {
+    -webkit-transform: translate(0px, -15px) rotate(46deg);
+            transform: translate(0px, -15px) rotate(46deg);
+  }
+  /******************* Banner **********************/
+  .ban-con {
+    width: 100%;
+    height: 546px;
+  }
+  .ban-con p {
+    width: 100%;
+  }
+  .ban-con h1 {
+    text-align: center;
+  }
+  .links {
+    margin-top: 0;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .links a {
+    width: 131px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h1 span {
+    letter-spacing: 0px;
+    font-size: 58px;
+  }
+  /******************* Banner **********************/
+  /******************* About us **********************/
+  .wel-con {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wel-con .wel-intro {
+    width: 400px;
+    height: 446px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wel-con .wel-intro h3, .wel-con .wel-intro p {
+    text-align: center;
+  }
+  .me-croped {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    height: 313px;
+  }
+  .me-croped img {
+    width: 286px;
+  }
+  .skills {
+    width: 400px;
+    margin-top: 20px;
+  }
+  /******************* About us **********************/
+  /******************* Services **********************/
+  .services {
+    margin-top: 20px;
+  }
+  .serv-con {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .serv-con .servs {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /******************* Services **********************/
+  /******************* Experience **********************/
+  .experience .ex-con {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+  .exps {
+    width: 364px;
+  }
+  /******************* Experience **********************/
+  /*******************    Blog **********************/
+  .the-blogs {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .bl-all {
+    width: 384px;
+  }
+  .bl-all a {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*******************    Blog **********************/
+  /******************* Projects **********************/
+  .proj-con {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .proj-con img {
+    width: 381px;
+  }
+  /******************* Projects **********************/
+  h4 {
+    text-align: center;
+  }
+  .socials {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 703px) and (max-width: 1057px) {
+  .services {
+    margin-top: 20px;
+  }
+  .serv-con {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  /******************* CTA **********************/
+  /******************* CTA **********************/
+}
+/*# sourceMappingURL=tab.css.map */

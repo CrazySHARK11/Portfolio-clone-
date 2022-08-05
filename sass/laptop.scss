@@ -1,0 +1,67 @@
+@media only screen and (min-width:769px) and (max-width:1224px){
+    .wrap{
+       width: 90%;
+    }
+    .menu{
+        width: 500px;
+    }
+    .ban-con{
+        height: 504px;
+    }
+    .wel-con{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .me-croped{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        img{
+            width: 372px;
+        }
+    }
+    .skills{
+        width: 468px;
+        grid-column:  1/span 3;
+        margin-top: 20px;
+    }
+    .experience{
+        .ex-con{
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 50px;
+
+         }
+    }
+    .spec{
+        grid-column: 1/span 3;
+    }
+
+    .the-blogs{
+        grid-template-columns: 1fr 1fr ;
+        width: 693px;
+    }
+    .bl-all{
+         width: 328px;
+    a{
+        width: 100%;
+    }
+    }
+   
+    /******************* Projects **********************/
+.proj-con{
+    width: 703px;
+    margin: 0px auto;
+    grid-template-columns: 1fr 1fr;
+    img{
+        width: 333px;
+    }
+}
+/******************* Projects **********************/
+}
+@media only screen and (min-width:1113px) and (max-width:1224px){
+    .the-blogs{
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
